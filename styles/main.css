@@ -1,0 +1,116 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: black;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 150.5%;
+    width: 1000px;
+	height: 600px;
+    margin: 0 auto;
+    border: 5px solid #020000;
+    background-color: #CAD869;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+/* the styles for the header */
+header {
+	text-align: center;
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #d52828;
+	background-image: linear-gradient(
+	    30deg, #1F7B15 0%, #C21919 30%, #1F7B15 50%, #C21919 80%, #1F7B15 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: red;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	color: red;
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 3px 3px 3px #1F7B15;
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a:hover{
+	background: red;
+	color: black;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 250px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #020000;
+    color: red;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* the styles for the main content */
+main {
+	clear: left;
+}
+/* the styles for the section */
+
+
+/* the styles for the footer */
+footer {
+	background-color: #1F7B15;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: .5em 0;
+}
